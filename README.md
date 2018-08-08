@@ -3,4 +3,5 @@ https://brew.sh/ formula that installs the latest version of COMDB2. This will b
 ```
 $ brew install https://raw.githubusercontent.com/EricHripko/brew-comdb2/master/comdb2.rb
 ```
-All the COMDB2 executables will be available in `$PATH`. The database files can be found in `/usr/local/var/cdb2/` whereas the logs are placed in `/usr/local/var/log/cdb2/`.
+All the COMDB2 executables will be available in `$PATH`. The database files can be found in `/usr/local/var/cdb2/` whereas logs are placed in `/usr/local/var/log/cdb2/`.  
+You can also test if COMDB2 was installed successfully by running `brew test comdb2`.
