@@ -39,12 +39,12 @@ class Comdb2 < Formula
       pmux = fork do
         exec bin/"pmux", "-f"
       end
-      sleep 2
+      sleep 10
 
       comdb2 = fork do
         exec bin/"comdb2", dbname, "--dir", dir
       end
-      sleep 2
+      sleep 10
 
       output = shell_output("#{bin/"cdb2sql"} #{dbname} --host 127.0.0.1 'SELECT comdb2_version();'")
       assert_match "(comdb2_version()='R7.0pre ()')", output
